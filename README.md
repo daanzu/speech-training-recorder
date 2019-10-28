@@ -10,6 +10,12 @@ respectively.
 
 ![Screenshot](.github/screenshot.png)
 
+**Requirements:**
+
+* Python 3
+* See [`requirements.txt`](requirements.txt) for required packages
+* Cross platform: Windows, Linux, MacOS
+
 ## Getting Started
 
 ```
