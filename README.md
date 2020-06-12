@@ -1,12 +1,13 @@
 # speech-training-recorder
 
 > A simple GUI application to help record audio dictated from given text
-prompts, for use with training speech recognition.
+prompts, for use with training speech recognition or speech synthesis.
 
 Given a text file containing prompts, this app will choose a random selection
 and ordering of them, display them to be dictated by the user, and record the
 dictation audio and metadata to a `.wav` file and `recorder.tsv` file
-respectively.
+respectively. You can select a previous recording to play it back, delete it,
+and/or re-record it.
 
 ![Screenshot](.github/screenshot.png)
 
