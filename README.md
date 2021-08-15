@@ -29,7 +29,7 @@ python3 recorder.py -p prompts/timit.txt
 
 ```
 usage: recorder.py [-h] [-p PROMPTS_FILENAME] [-d SAVE_DIR] [-c PROMPTS_COUNT]
-                   [-l PROMPT_LEN_SOFT_MAX]
+                   [-l PROMPT_LEN_SOFT_MAX] [-o]
 
 Given a text file containing prompts, this app will choose a random selection
 and ordering of them, display them to be dictated by the user, and record the
@@ -46,6 +46,8 @@ optional arguments:
   -c PROMPTS_COUNT, --prompts_count PROMPTS_COUNT
                         number of prompts to select and display (default: 100)
   -l PROMPT_LEN_SOFT_MAX, --prompt_len_soft_max PROMPT_LEN_SOFT_MAX
+  -o, --ordered         present prompts in order, as opposed to random
+                        (default: False)
 ```
 
 ## Customization
