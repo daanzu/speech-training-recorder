@@ -1,6 +1,6 @@
 # speech-training-recorder
 
-> A simple GUI application to help record audio dictated from given text
+> Simple GUI application to help record audio dictated from given text
 prompts, for use with training speech recognition or speech synthesis.
 
 Given a text file containing prompts, this app will choose a random selection
