@@ -67,6 +67,14 @@ class Recorder(QObject):
     @Slot(str)
     def deleteFile(self, filename):
         os.remove(filename)
+        xsvfile_in_path = os.path.join(self.window.property('saveDir'), "recorder.tsv")
+        xsvfile_out_path = os.path.join(self.window.property('saveDir'), "recorder_delete_temp.tsv")
+        with open(xsvfile_in_path, "r") as xsvfile_in:
+            with open(xsvfile_out_path, "w") as xsvfile_out:
+                for line in xsvfile_in:
+                    if filename not in line:
+                        xsvfile_out.write(line)
+        os.replace(xsvfile_out_path, xsvfile_in_path)
         self.window.setProperty('scriptFilename', '')
 
     def read_audio(self, drop_last=None):
