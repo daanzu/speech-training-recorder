@@ -53,3 +53,7 @@ optional arguments:
 ## Customization
 
 See `prompts/` directory for acceptable formats for prompt files: the simplest is `rainbow_passage.txt`.
+
+## Related Repositories
+
+* [daanzu/kaldi_ag_training](https://github.com/daanzu/kaldi_ag_training): Docker image and scripts for training finetuned or completely personal Kaldi speech models. Particularly for use with [kaldi-active-grammar](https://github.com/daanzu/kaldi-active-grammar).
